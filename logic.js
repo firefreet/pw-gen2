@@ -73,4 +73,5 @@ $("#createButton").on("click", function() {
 $("#cpbtn").on('click', function() {
     pwTB.select()
     document.execCommand('copy')
+    alert("Copied")
 })
