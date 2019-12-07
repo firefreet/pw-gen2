@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Password Gen</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid mt-5 pb-1 pt-2">
+        <h1 class="display-4 text-center">Password Generator</h1>
+        <p class="lead text-center">Select the desired character types (at least one) and a character length between 8 & 128.</p>        
+        <div class="row m-0 p-0">
+          <div class="col-4 mx-auto">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button id="numButton" type="button" class="btn btn-secondary mx-1" data-toggle="button">0 - 9</button>
+                <button id="upperButton" type="button" class="btn btn-secondary mx-1" data-toggle="button">A - Z</button>
+                <button id="lowerButton" type="button" class="btn btn-secondary mx-1" data-toggle="button">a - z</button>
+                <button id="specialButton" type="button" class="btn btn-secondary mx-1" data-toggle="button"># - @</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto"></div>
+          <div class="col-4 mx-auto">
+            <div class="input-group ml-auto mr-1">
+              <div class="input-group-prepend">
+                <div class="input-group-text my-1" id="btnGroupAddon">length</div>
+              </div>
+              <input id="length" type="text" class="form-control my-1 text-center" maxlength="3" placeholder="8 - 128" aria-label="Input group example" aria-describedby="btnGroupAddon">
+            </div>
+          </div>
+        </div>
+        <hr class="my-4">
+        <div class="row mx-5 my-3">
+          <textarea id="newPassword" class="form-control-plain-text border mx-auto w-100 h-75 mr-3" readonly="readonly" type="text" placeholder="..."></textarea>
+        </div>
+        <div class="row mx-5 my-3 p-0">
+          <div class="col-3 m-0 p-0">
+            <button class="btn btn-info btn-sm btn-block" id="createButton">Create PW</button>
+          </div>
+          <div class="col-auto"></div>
+          <div class="col-3 ml-auto p-0">
+            <button id="cpbtn" class="btn btn-info btn-sm mx-auto mt-0 invisible btn-block">Copy PW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="logic.js"></script>
+  </body>
+</html>

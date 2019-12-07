@@ -1,0 +1,26 @@
+body {
+    /* png from https://www.toptal.com/designers/subtlepatterns/ */
+    background-image: url(embossed-diamond.png);
+    font-family: 'Tomorrow', sans-serif;
+}
+
+.jumbotron {
+    background-color: #d1e6e3;
+}
+
+.btn.active {
+    background-color: rgb(126, 109, 148) !important;
+}
+
+input:invalid {
+    color: red;
+}
+
+#length {
+    min-width: 70px;
+}
+
+#length::placeholder {
+    color: #cccccc;
+    font-style: italic;
+}
