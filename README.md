@@ -9,3 +9,6 @@ The user will be be allowed to select from the following password criteria:
   * Uppercase characters
   
 With valid selections, the user will be presented with a password matching the answered prompts.
+
+!(screeshot)(screenshot.png)
+https://firefreet.github.io/pw-gen2/
