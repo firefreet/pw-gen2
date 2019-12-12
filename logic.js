@@ -14,7 +14,7 @@ $("#createButton").on("click", function() {
     var upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var lowerLetters = "abcdefghijklmnopqrstuvwxyz";
     var nums = "0123456789";
-    var special = "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+    var special = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
     var charList = "";
     var newPassword = "";
     var passUpper = false;
@@ -58,9 +58,10 @@ $("#createButton").on("click", function() {
             charList += special;
         }
         for (var i = 1; i <= passLength; i++) {
-            newPassword += charList.charAt(Math.floor(Math.random() * charList.length) +1);
+            newPassword += charList.charAt(Math.floor(Math.random() * charList.length));
         }
-        cl(newPassword)
+        // cl(newPassword)
+        // cl(newPassword.length)
         pwTB.value = newPassword;
 
         if ( document.getElementById("cpbtn").classList.contains('invisible') ) {
