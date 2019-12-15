@@ -22,10 +22,10 @@
           <div class="col-4 mx-auto">
             <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
               <div class="btn-group mr-2" role="group" aria-label="First group">
-                <button id="numButton" type="button" class="btn btn-secondary mx-1" data-toggle="button">0 - 9</button>
-                <button id="upperButton" type="button" class="btn btn-secondary mx-1" data-toggle="button">A - Z</button>
-                <button id="lowerButton" type="button" class="btn btn-secondary mx-1" data-toggle="button">a - z</button>
-                <button id="specialButton" type="button" class="btn btn-secondary mx-1" data-toggle="button"># - @</button>
+                <button id="numButton" type="button" class="btn btn-secondary mx-1" aria-pressed="true" data-toggle="button">0 - 9</button>
+                <button id="upperButton" type="button" class="btn btn-secondary mx-1" aria-pressed="false" data-toggle="button">A - Z</button>
+                <button id="lowerButton" type="button" class="btn btn-secondary mx-1" aria-pressed="false" data-toggle="button">a - z</button>
+                <button id="specialButton" type="button" class="btn btn-secondary mx-1" aria-pressed="true" data-toggle="button"># - @</button>
               </div>
             </div>
           </div>
@@ -35,7 +35,7 @@
               <div class="input-group-prepend">
                 <div class="input-group-text my-1" id="btnGroupAddon">length</div>
               </div>
-              <input id="length" type="text" class="form-control my-1 text-center" maxlength="3" placeholder="8 - 128" aria-label="Input group example" aria-describedby="btnGroupAddon">
+              <input id="length" type="text" class="form-control my-1 text-center" maxlength="3" value="16" aria-label="Input group example" aria-describedby="btnGroupAddon">
             </div>
           </div>
         </div>
